@@ -343,25 +343,10 @@ ax.legend(loc="best")
 
 
 
-    <matplotlib.legend.Legend at 0x15e650d5588>
+    <matplotlib.legend.Legend at 0x1c2f80241d0>
 
 
 
 
 ![png](README_files/README_15_1.png)
 
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```

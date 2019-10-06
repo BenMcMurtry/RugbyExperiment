@@ -3,6 +3,12 @@
 
 
 ```python
+# To make markdown from this file
+# jupyter nbconvert --to markdown RugbyExperiment.ipynb --output README.md
+```
+
+
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -94,87 +100,51 @@ rugby.head(5)
 
 
 
-## All_Scores is a series made from the Score1 and Score2 columns
+
+```python
+# Number of ways to reach score n.
+n = 40
+
+# table[i] will store count of solutions for value i.
+table = [0 for i in range(n+1)]
+
+# Base case (If given value is 0)
+table[0] = 1
+
+# One by one consider given 3 moves and update the 
+# table[] values after the index greater than or equal 
+# to the value of the picked move.
+for i in range(3, n+1):
+    table[i] += table[i-3]
+for i in range(5, n+1):
+    table[i] += table[i-5]
+for i in range(7, n+1):
+    table[i] += table[i-7]
+
+
+d={i:x for i,x in enumerate(table)}
+score_possibilities = plt.figure(figsize=(16,8))
+plt.bar(range(len(d)), list(d.values()), align='center')
+plt.xticks(range(len(d)), list(d.keys()))
+plt.show()
+```
+
+
+![png](README_files/README_4_0.png)
+
+
+## All_Scores is a series made by appending Score1 and Score2 columns
 
 
 ```python
 All_Scores = rugby['Score1'].append(rugby['Score2'])
-All_Scores
 ```
-
-
-
-
-    0      27
-    1      19
-    2       7
-    3      10
-    4      16
-    5      22
-    6      29
-    7      19
-    8      36
-    9      22
-    10     18
-    11     61
-    12     29
-    13     20
-    14     13
-    15     23
-    16      9
-    17     16
-    18     10
-    19     27
-    20      9
-    21     19
-    22     20
-    23     21
-    24     58
-    25     25
-    26     29
-    27     67
-    28     35
-    29     21
-           ..
-    108    36
-    109    28
-    110    17
-    111    16
-    112    14
-    113     9
-    114    21
-    115    10
-    116    16
-    117    17
-    118     9
-    119    19
-    120     7
-    121    10
-    122    11
-    123    18
-    124    10
-    125    18
-    126     9
-    127    17
-    128    22
-    129    24
-    130    19
-    131    13
-    132    43
-    133    34
-    134    20
-    135    29
-    136    13
-    137    17
-    Length: 276, dtype: int64
-
-
 
 ## Countplot for scores
 
 
 ```python
-fig1 = plt.figure(figsize=(24,12))
+score_data_countplot = plt.figure(figsize=(24,12))
 ax = sns.distplot(All_Scores, bins=np.arange(70)-0.5, kde=False, color = 'g')
 ax.set(xticks=range(0,70))
 ax.set(yticks=range(0,20))
@@ -182,7 +152,7 @@ ax.grid()
 ```
 
 
-![png](README_files/README_6_0.png)
+![png](README_files/README_8_0.png)
 
 
 
@@ -343,10 +313,10 @@ ax.legend(loc="best")
 
 
 
-    <matplotlib.legend.Legend at 0x1c2f80241d0>
+    <matplotlib.legend.Legend at 0x1cfcb9df7f0>
 
 
 
 
-![png](README_files/README_15_1.png)
+![png](README_files/README_17_1.png)
 

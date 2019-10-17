@@ -56,43 +56,43 @@ rugby.head(5)
   <tbody>
     <tr>
       <th>0</th>
-      <td>Scotland</td>
-      <td>27</td>
-      <td>22</td>
-      <td>Ireland</td>
-      <td>2017</td>
+      <td>Japan</td>
+      <td>30</td>
+      <td>10</td>
+      <td>Russia</td>
+      <td>2019</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>England</td>
-      <td>19</td>
-      <td>16</td>
-      <td>France</td>
-      <td>2017</td>
+      <td>Australia</td>
+      <td>39</td>
+      <td>21</td>
+      <td>Fiji</td>
+      <td>2019</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Italy</td>
-      <td>7</td>
-      <td>33</td>
-      <td>Wales</td>
-      <td>2017</td>
+      <td>France</td>
+      <td>23</td>
+      <td>21</td>
+      <td>Argentina</td>
+      <td>2019</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Italy</td>
-      <td>10</td>
-      <td>63</td>
-      <td>Ireland</td>
-      <td>2017</td>
+      <td>NewZealand</td>
+      <td>23</td>
+      <td>13</td>
+      <td>SouthAfrica</td>
+      <td>2019</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Wales</td>
-      <td>16</td>
-      <td>21</td>
-      <td>England</td>
-      <td>2017</td>
+      <td>Italy</td>
+      <td>47</td>
+      <td>22</td>
+      <td>Namibia</td>
+      <td>2019</td>
     </tr>
   </tbody>
 </table>
@@ -162,16 +162,16 @@ for score, count in most_freq.head(10).iteritems():
     print("{} has occurred {} times".format(score, count))
 ```
 
-    16 has occurred 17 times
-    13 has occurred 16 times
-    9 has occurred 15 times
-    10 has occurred 14 times
-    23 has occurred 13 times
-    18 has occurred 12 times
-    15 has occurred 11 times
-    19 has occurred 10 times
-    21 has occurred 10 times
-    20 has occurred 9 times
+    1 has occurred 6 times
+    0 has occurred 4 times
+    3 has occurred 4 times
+    7 has occurred 4 times
+    10 has occurred 4 times
+    21 has occurred 4 times
+    35 has occurred 3 times
+    23 has occurred 3 times
+    19 has occurred 3 times
+    45 has occurred 3 times
     
 
 #### Common scores seen in the ranges 9-10, 12-13, 15-23, 26-30
@@ -228,62 +228,6 @@ mh
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>4</th>
-      <td>Wales</td>
-      <td>16</td>
-      <td>21</td>
-      <td>England</td>
-      <td>2017</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Wales</td>
-      <td>21</td>
-      <td>25</td>
-      <td>England</td>
-      <td>2016</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Wales</td>
-      <td>16</td>
-      <td>21</td>
-      <td>England</td>
-      <td>2015</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>Wales</td>
-      <td>18</td>
-      <td>29</td>
-      <td>England</td>
-      <td>2014</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>Wales</td>
-      <td>30</td>
-      <td>3</td>
-      <td>England</td>
-      <td>2013</td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td>Wales</td>
-      <td>19</td>
-      <td>12</td>
-      <td>England</td>
-      <td>2012</td>
-    </tr>
-    <tr>
-      <th>93</th>
-      <td>Wales</td>
-      <td>28</td>
-      <td>25</td>
-      <td>England</td>
-      <td>2015</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -295,7 +239,7 @@ mh
 print("Mean scores are {} {}".format(mh['Score1'].mean(), mh['Score2'].mean()))
 ```
 
-    Mean scores are 21.142857142857142 19.428571428571427
+    Mean scores are nan nan
     
 
 #### Here we will create a regression plot of the scores from a pair of teams' match history
@@ -313,7 +257,7 @@ ax.legend(loc="best")
 
 
 
-    <matplotlib.legend.Legend at 0x1cfcb9df7f0>
+    <matplotlib.legend.Legend at 0x1fb7c4c27f0>
 
 
 

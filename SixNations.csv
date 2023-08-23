@@ -1,5 +1,19 @@
-#Team1,Score1,Score2,Team2,Year
-26.03. 20:00
+Team1,Score1,Score2,Team2,Year
+Ireland,29,7,Wales,2022
+Scotland,20,17,England,2022
+France,37,10,Italy,2022
+Wales,20,17,Scotland,2022
+France,30,24,Ireland,2022
+Italy,0,33,England,2022
+Scotland,17,36,France,2022
+England,23,19,Wales,2022
+Ireland,57,6,Italy,2022
+Wales,9,13,France,2022
+Italy,22,33,Scotland,2022
+England,15,32,Ireland,2022
+Wales,21,22,Italy,2022
+Ireland,26,5,Scotland,2022
+France,25,13,England,2022
 France,23,27,Scotland,2021
 France,32,30,Wales,2021
 Ireland,32,18,England,2021
